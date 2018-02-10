@@ -3,7 +3,7 @@
     margin-bottom: 20px;
 
     direction: rtl;
-    height: 55px;
+    min-height: 55px;
 }
 
 .subscription-form {
@@ -12,12 +12,12 @@
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    box-shadow: 0 0 70px 0 rgba(0,0,0,.2);
-    -webkit-box-shadow: 0 0 70px 0 rgba(0,0,0,.2);
-    -moz-box-shadow: 0 0 70px 0 rgba(0,0,0,.2);
     border-radius: 10px;
 
     height: 100% !important;
+
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
 }
 .subscription-form input {
     border-radius: 0 10px 10px 0 !important;
@@ -34,6 +34,10 @@
 
     margin-bottom: 0 !important;
     margin-top: 0 !important;
+
+    box-shadow: 0 0 70px 0 rgba(0,0,0,.2) !important;
+    -webkit-box-shadow: 0 0 70px 0 rgba(0,0,0,.2) !important;
+    -moz-box-shadow: 0 0 70px 0 rgba(0,0,0,.2) !important;
 }
 .subscription-form button {
     border-radius: 10px 0 0 10px !important;
@@ -42,7 +46,7 @@
     outline: none !important;
     border: none !important;
     font-size: 18px !important;
-    padding: 0 35px !important;
+    padding: 7px 35px !important;
     box-sizing: border-box !important;
     cursor: pointer !important;
     transition: background-color .2s !important;
@@ -51,6 +55,10 @@
 
     margin-bottom: 0 !important;
     margin-top: 0 !important;
+
+    box-shadow: 0 0 70px 0 rgba(0,0,0,.2) !important;
+    -webkit-box-shadow: 0 0 70px 0 rgba(0,0,0,.2) !important;
+    -moz-box-shadow: 0 0 70px 0 rgba(0,0,0,.2) !important;
 }
 .subscription-form button:hover
 {
@@ -97,4 +105,13 @@
 }
 .subscription-form-wrapper[data-state='error'] .successState {
     display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .subscription-form input, .subscription-form button {
+        border-radius: 0 !important;
+    }
+    .subscription-form button {
+        margin-top: 12px !important;
+    }
 }
