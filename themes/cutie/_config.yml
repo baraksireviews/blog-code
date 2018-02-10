@@ -1,0 +1,25 @@
+version: 1.0.0
+slogan:
+  ברוכים הבאים!
+  <br><br>
+  במידה וזו פעם ראשונה שלכם פה, אנא קראו קודם את העמודים הבאים -
+  <a href='/about' style='color:#D63E0A;text-decoration:underline;'>אודות</a>,
+  <a href='/disclaimer' style='color:#D63E0A;text-decoration:underline;'>כתב ויתור ורשיון שימוש בתוכן</a>.
+  <br><br>
+  מטרת האתר היא למלא את החלל החסר, ולספק סקירות איכותיות של ICOs בשפת הקודש.
+  <br><br>
+  במידה ויש לכם הערות, הארות, רעיונות, מציאת טעויות באתר, המלצה על חברות לסיקור או שסתם בא לכם לדבר.. הרגישו חופשיים לפנות אל יוצר האתר, בקישורים המופיעים מטה, בסוף עמוד הבית.
+menu:
+  Home:
+    link: /
+    icon: /images/home.svg
+  About:
+    link: /about/
+    icon: /images/resume.svg
+  Disclaimer & Licensing:
+    link: /disclaimer/
+    icon: /images/notes.svg
+social:
+    telegram: //www.t.me/baraksi
+    linkedin: //www.linkedin.com/in/barak-simon-150933107/
+    envelope: mailto:baraksi.reviews@gmail.com
