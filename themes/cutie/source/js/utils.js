@@ -7,8 +7,8 @@ function xhr(url, params, callback, data, x) {
             x.withCredentials = true;
         x.open(data ? 'POST' : 'GET', url, 1);
         x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        x.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-        x.setRequestHeader('Accept', 'application/json; charset=utf-8');
+        x.setRequestHeader('Content-type', "application/x-www-form-urlencoded");
+        x.setRequestHeader('Accept', 'application/json');
         x.onreadystatechange = function () {
             if (x.readyState > 3 && callback) {
                 if (x.status === 200) {
@@ -20,7 +20,14 @@ function xhr(url, params, callback, data, x) {
 
             }
         };
-        x.send(data)
+
+        var dataStr = '';
+        Object.keys(data).forEach(function(key) {
+            dataStr += key + '=' + data[key] + '&';
+        });
+
+        console.log('xhr send', dataStr);
+        x.send(dataStr)
     } catch (e) {
         callback(new Error('exception caught ' + e));
     }

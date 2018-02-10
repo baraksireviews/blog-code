@@ -35,7 +35,7 @@
                 elem.parentElement.setAttribute('data-state', 'success');
             }
         },
-        { email: email }, x);
+        { email: email, action: 'email_subscription' }, x);
     }
 
     function handleSubscriptionFormSubmitFailure(event, elem) {
