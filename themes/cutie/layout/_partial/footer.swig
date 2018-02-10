@@ -1,4 +1,5 @@
 <footer class='footer'>
+    {{ partial('_partial/subscription_form.swig') }}
     <div class='footer-logo'>
         <span>{{ config.cutie.signature }}</span>
     </div>
